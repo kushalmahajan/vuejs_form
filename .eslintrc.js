@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true
   },
-  extends: [ "plugin:vue/essential", "@vue/prettier", "prettier"],
+  extends: ["plugin:vue/essential", "plugin:prettier/recommended", "eslint:recommended"],
   parserOptions: {
     parser: "babel-eslint"
   },
@@ -16,6 +16,7 @@ module.exports = {
     "no-unused-vars": 0,
     "no-return-assign": 0,
     "no-plusplus": 0,
+    "indent": ["error", "tab"],
     "prefer-const": [
       "error",
       {
@@ -72,7 +73,7 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "es5",
+        "trailingComma": "none",
         "singleQuote": true,
         "printWidth": 100,
         "tabWidth": 4,
